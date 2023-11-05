@@ -3,6 +3,11 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "pnpm@8.8.0",
+  "description": "starter next app",
+  "author": "Debbl <me@aiwna.run>(https://github.com/Debbl/)",
+  "license": "MIT",
+  "homepage": "https://github.com/Debbl/starter-next-app",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
