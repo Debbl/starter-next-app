@@ -1,12 +1,14 @@
 {
   "name": "starter-next-app",
-  "version": "0.1.0",
+  "type": "module",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "next": "14.0.1",
@@ -14,6 +16,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@debbl/eslint-config": "^1.1.1",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.35",
     "@types/react-dom": "^18.2.14",
