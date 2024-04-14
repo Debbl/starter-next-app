@@ -1,7 +1,17 @@
+"use client";
+import { useState } from "react";
+
 export default function Home() {
+  const [count, setCount] = useState(0);
+
   return (
-    <main className="flex justify-center items-center h-screen">
-      <div className="text-red-300">Hi</div>
+    <main className="flex h-screen items-center justify-center">
+      <div
+        className="cursor-pointer font-bold text-green-300"
+        onClick={() => setCount(count + 1)}
+      >
+        Hi {count}
+      </div>
     </main>
   );
 }
