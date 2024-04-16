@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex h-screen items-center justify-center">
       <div
-        className="cursor-pointer font-bold text-green-300"
+        className="cursor-pointer select-none font-bold text-green-300"
         onClick={() => setCount(count + 1)}
       >
         Hi {count}
