@@ -20,15 +20,6 @@ jobs:
         with:
           node-version: lts/*
 
-      - name: Cache pnpm dependencies
-        id: cache-pnpm
-        uses: actions/cache@v4
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-
       - name: Install pnpm
         uses: pnpm/action-setup@v4
 
@@ -37,6 +28,15 @@ jobs:
 
       - name: Install
         run: nci
+
+      - name: Cache pnpm dependencies
+        id: cache-pnpm
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Lint
         run: nr lint
@@ -51,15 +51,6 @@ jobs:
         with:
           node-version: lts/*
 
-      - name: Cache pnpm dependencies
-        id: cache-pnpm
-        uses: actions/cache@v4
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-
       - name: Install pnpm
         uses: pnpm/action-setup@v4
 
@@ -68,6 +59,15 @@ jobs:
 
       - name: Install
         run: nci
+
+      - name: Cache pnpm dependencies
+        id: cache-pnpm
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Typecheck
         run: nr typecheck
