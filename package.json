@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.1.4",
+  "packageManager": "pnpm@9.2.0",
   "description": "starter next app",
-  "author": "Debbl <me@aiwna.run>(https://github.com/Debbl/)",
+  "author": "Brendan Dash <me@aiwna.run> (https://github.com/Debbl/)",
   "license": "MIT",
   "homepage": "https://github.com/Debbl/starter-next-app",
   "repository": {
@@ -27,8 +27,8 @@
     "react-dom": "19.0.0-rc-6d3110b4d9-20240531"
   },
   "devDependencies": {
-    "@debbl/eslint-config": "^3.2.4",
-    "@types/node": "^20.13.0",
+    "@debbl/eslint-config": "^3.3.0",
+    "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
@@ -37,7 +37,7 @@
     "lint-staged": "^15.2.5",
     "postcss": "^8.4.38",
     "simple-git-hooks": "^2.11.1",
-    "tailwindcss": "^3.4.3",
+    "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5"
   },
   "simple-git-hooks": {
