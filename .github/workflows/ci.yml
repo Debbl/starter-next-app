@@ -27,7 +27,6 @@ jobs:
         shell: bash
         run: |
           echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-          pnpm store path
 
       - uses: actions/cache@v4
         name: Setup pnpm cache
@@ -63,7 +62,6 @@ jobs:
         shell: bash
         run: |
           echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-          pnpm store path
 
       - uses: actions/cache@v4
         name: Setup pnpm cache
