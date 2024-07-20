@@ -6,3 +6,8 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "chore(deps)"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
+    versioning-strategy: "increase"
