@@ -10,4 +10,4 @@ updates:
       all-dependencies-with-semver:
         patterns:
           - "*"
-        versioning-strategy: "increase"
+    versioning-strategy: "increase"
