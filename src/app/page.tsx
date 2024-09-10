@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
 import { Button } from "@nextui-org/react";
+import { useState } from "react";
 
 export default function Home() {
   const [count, setCount] = useState(0);
