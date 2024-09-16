@@ -22,24 +22,24 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.4.6",
+    "@nextui-org/react": "^2.4.8",
     "framer-motion": "^11.5.4",
-    "next": "^14.2.9",
+    "next": "^14.2.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@debbl/eslint-config": "^3.6.0",
-    "@next/bundle-analyzer": "^14.2.9",
-    "@types/node": "^22.5.4",
-    "@types/react": "^18.3.5",
+    "@next/bundle-analyzer": "^14.2.11",
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.6",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "lint-staged": "^15.2.10",
-    "postcss": "^8.4.45",
+    "postcss": "^8.4.47",
     "simple-git-hooks": "^2.11.1",
-    "tailwindcss": "^3.4.10",
+    "tailwindcss": "^3.4.11",
     "typescript": "^5.6.2"
   },
   "simple-git-hooks": {
