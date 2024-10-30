@@ -1,13 +1,14 @@
-"use client";
-import { Button } from "@nextui-org/react";
-import { useState } from "react";
+import { m } from "~/lib/framer-motion";
+import Counter from "./Counter";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
-
   return (
-    <main className="flex h-screen items-center justify-center">
-      <Button onClick={() => setCount(count + 1)}>Hi {count}</Button>
+    <main className="flex h-full flex-col items-center justify-center gap-y-4">
+      <m.div
+        whileHover={{ scale: 1.1, rotate: "360deg" }}
+        className="size-16 rounded-md border bg-blue-600"
+      />
+      <Counter />
     </main>
   );
 }
