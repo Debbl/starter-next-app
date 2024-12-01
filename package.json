@@ -23,6 +23,7 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@debbl/ahooks": "^0.3.2",
     "@nextui-org/react": "^2.4.8",
     "motion": "12.0.0-alpha.2",
     "next": "^15.0.3",

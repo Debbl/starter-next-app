@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@debbl/ahooks':
+        specifier: ^0.3.2
+        version: 0.3.2(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)
       '@nextui-org/react':
         specifier: ^2.4.8
         version: 2.4.8(@types/react@18.3.12)(framer-motion@12.0.0-alpha.2(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614))(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(tailwindcss@3.4.15)
@@ -178,6 +181,12 @@ packages:
   '@babel/types@7.26.0':
     resolution: {integrity: sha512-Z/yiTPj+lDVnF7lWeKCIJzaIkI0vYO87dMpZ4bg4TDrFe4XXLFWL1TbXU27gBP3QccxV9mZICCrnjnYlJjXHOA==}
     engines: {node: '>=6.9.0'}
+
+  '@debbl/ahooks@0.3.2':
+    resolution: {integrity: sha512-6pya/sMazcpsvcghE0X4OtOOvLarWaHzFQU41KObmr9BOn/ht1T9CsBzfCuNbnMMEoe9qiyccIa9YrgZQuUmgQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
 
   '@debbl/eslint-config@3.8.4':
     resolution: {integrity: sha512-2G+R83dr8W5HkaOjCEUnnhVSY+gJqiyDPAEfG83rzxfnbC3go21krxse81jUfMi4KZxxulSbCMZ2J5mcDxTVcQ==}
@@ -4480,6 +4489,11 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
+
+  '@debbl/ahooks@0.3.2(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)':
+    dependencies:
+      react: 19.0.0-rc-fb9a90fa48-20240614
+      react-dom: 19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614)
 
   '@debbl/eslint-config@3.8.4(@types/eslint@8.56.10)(eslint@9.15.0(jiti@1.21.6))(tailwindcss@3.4.15)(typescript@5.7.2)':
     dependencies:
