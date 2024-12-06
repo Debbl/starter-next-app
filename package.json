@@ -31,8 +31,8 @@
     "lucide-react": "^0.465.0",
     "motion": "12.0.0-alpha.2",
     "next": "^15.0.3",
-    "react": "19.0.0-rc-fb9a90fa48-20240614",
-    "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "twl": "0.0.0-alpha.6"
