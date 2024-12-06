@@ -13,9 +13,10 @@
     "url": "https://github.com/Debbl/starter-next-app.git"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "build:analyze": "ANALYZE=true next build",
+    "ui": "shadcn add",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -24,11 +25,17 @@
   },
   "dependencies": {
     "@debbl/ahooks": "^0.3.2",
-    "@nextui-org/react": "^2.4.8",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.465.0",
     "motion": "12.0.0-alpha.2",
     "next": "^15.0.3",
     "react": "19.0.0-rc-fb9a90fa48-20240614",
-    "react-dom": "19.0.0-rc-fb9a90fa48-20240614"
+    "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "twl": "0.0.0-alpha.6"
   },
   "devDependencies": {
     "@debbl/eslint-config": "^3.8.4",
@@ -41,6 +48,7 @@
     "eslint": "^9.15.0",
     "lint-staged": "^15.2.10",
     "postcss": "^8.4.49",
+    "shadcn": "^2.1.6",
     "simple-git-hooks": "^2.11.1",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2"
