@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@debbl/ahooks':
         specifier: ^0.3.2
-        version: 0.3.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 0.3.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@radix-ui/react-slot':
         specifier: ^1.1.0
         version: 1.1.0(@types/react@19.0.0)(react@19.0.0)
@@ -224,11 +224,11 @@ packages:
     resolution: {integrity: sha512-vN5p+1kl59GVKMvTHt55NzzmYVxprfJD+ql7U9NFIfKCBkYE55LYtS+WtPlaYOyzydrKI8Nezd+aZextrd+FMA==}
     engines: {node: '>=6.9.0'}
 
-  '@debbl/ahooks@0.3.3':
-    resolution: {integrity: sha512-MRjWumAfSvDTD8VdkdyrjRRsEmnM/GbmL9/e95iML0+B+dqq+3/BXiVVCo9xOr3gURQEtKLdpdrjM7eqD7BZdw==}
+  '@debbl/ahooks@0.3.4':
+    resolution: {integrity: sha512-RbzTtiMuwlUmBb551PXI0q7FjBDYx7bWh9JUYtdUZVGs+gm3Gcgih8iQ490ZLB+fbYysxsrPv4Y+yIZZIGzTPQ==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   '@debbl/eslint-config@3.8.4':
     resolution: {integrity: sha512-2G+R83dr8W5HkaOjCEUnnhVSY+gJqiyDPAEfG83rzxfnbC3go21krxse81jUfMi4KZxxulSbCMZ2J5mcDxTVcQ==}
@@ -3598,7 +3598,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@debbl/ahooks@0.3.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@debbl/ahooks@0.3.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
