@@ -190,14 +190,15 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  '@babel/plugin-syntax-typescript@7.25.9':
-    resolution: {integrity: sha512-hjMgRy5hb8uJJjUcdWunWVcoi9bGpJp8p5Ol1229PoN6aytsLwNMgmdftO23wnCLMfVmTwZDWMPNq/D1SY60JQ==}
+  '@babel/plugin-proposal-private-methods@7.18.6':
+    resolution: {integrity: sha512-nutsvktDItsNn4rpGItSNV2sz1XwS+nfU0Rg8aCx3W3NOKVzdMjJRu0O5OkgDp3ZGICSTbgRpxZoWsxoKRvbeA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/plugin-transform-private-methods@7.25.9':
-    resolution: {integrity: sha512-D/JUozNpQLAPUVusvqMxyvjzllRaF8/nSrP1s2YGQT/W4LHK4xxsMcHjhOGTS01mp9Hda8nswb+FblLdJornQw==}
+  '@babel/plugin-syntax-typescript@7.25.9':
+    resolution: {integrity: sha512-hjMgRy5hb8uJJjUcdWunWVcoi9bGpJp8p5Ol1229PoN6aytsLwNMgmdftO23wnCLMfVmTwZDWMPNq/D1SY60JQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -1350,8 +1351,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-react-compiler@19.0.0-beta-df7b47d-20241124:
-    resolution: {integrity: sha512-82PfnllC8jP/68KdLAbpWuYTcfmtGLzkqy2IW85WopKMTr+4rdQpp+lfliQ/QE79wWrv/dRoADrk3Pdhq25nTw==}
+  eslint-plugin-react-compiler@19.0.0-beta-37ed2a7-20241206:
+    resolution: {integrity: sha512-5Pex1fUCJwLwwqEJe6NkgTn45kUjjj9TZP6IrW4IcpWM/YaEe+QvcOeF60huDjBq0kz1svGeW2nw8WdY+qszAw==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -2375,11 +2376,6 @@ packages:
 
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
-
-  nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
 
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
@@ -3453,7 +3449,7 @@ snapshots:
 
   '@babel/generator@7.26.2':
     dependencies:
-      '@babel/parser': 7.26.2
+      '@babel/parser': 7.26.3
       '@babel/types': 7.26.0
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
@@ -3487,14 +3483,14 @@ snapshots:
   '@babel/helper-member-expression-to-functions@7.25.9':
     dependencies:
       '@babel/traverse': 7.25.9
-      '@babel/types': 7.26.0
+      '@babel/types': 7.26.3
     transitivePeerDependencies:
       - supports-color
 
   '@babel/helper-module-imports@7.25.9':
     dependencies:
       '@babel/traverse': 7.25.9
-      '@babel/types': 7.26.0
+      '@babel/types': 7.26.3
     transitivePeerDependencies:
       - supports-color
 
@@ -3509,7 +3505,7 @@ snapshots:
 
   '@babel/helper-optimise-call-expression@7.25.9':
     dependencies:
-      '@babel/types': 7.26.0
+      '@babel/types': 7.26.3
 
   '@babel/helper-plugin-utils@7.25.9': {}
 
@@ -3548,18 +3544,18 @@ snapshots:
     dependencies:
       '@babel/types': 7.26.3
 
-  '@babel/plugin-syntax-typescript@7.25.9(@babel/core@7.26.0)':
-    dependencies:
-      '@babel/core': 7.26.0
-      '@babel/helper-plugin-utils': 7.25.9
-
-  '@babel/plugin-transform-private-methods@7.25.9(@babel/core@7.26.0)':
+  '@babel/plugin-proposal-private-methods@7.18.6(@babel/core@7.26.0)':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/helper-create-class-features-plugin': 7.25.9(@babel/core@7.26.0)
       '@babel/helper-plugin-utils': 7.25.9
     transitivePeerDependencies:
       - supports-color
+
+  '@babel/plugin-syntax-typescript@7.25.9(@babel/core@7.26.0)':
+    dependencies:
+      '@babel/core': 7.26.0
+      '@babel/helper-plugin-utils': 7.25.9
 
   '@babel/plugin-transform-typescript@7.26.3(@babel/core@7.26.0)':
     dependencies:
@@ -3575,14 +3571,14 @@ snapshots:
   '@babel/template@7.25.9':
     dependencies:
       '@babel/code-frame': 7.26.2
-      '@babel/parser': 7.26.2
+      '@babel/parser': 7.26.3
       '@babel/types': 7.26.0
 
   '@babel/traverse@7.25.9':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/generator': 7.26.2
-      '@babel/parser': 7.26.2
+      '@babel/parser': 7.26.3
       '@babel/template': 7.25.9
       '@babel/types': 7.26.0
       debug: 4.3.7
@@ -3623,7 +3619,7 @@ snapshots:
       eslint-plugin-perfectionist: 3.9.1(eslint@9.15.0(jiti@1.21.6))(typescript@5.7.2)(vue-eslint-parser@9.4.3(eslint@9.15.0(jiti@1.21.6)))
       eslint-plugin-prettier: 5.2.1(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.15.0(jiti@1.21.6)))(eslint@9.15.0(jiti@1.21.6))(prettier@3.3.3)
       eslint-plugin-react: 7.37.2(eslint@9.15.0(jiti@1.21.6))
-      eslint-plugin-react-compiler: 19.0.0-beta-df7b47d-20241124(eslint@9.15.0(jiti@1.21.6))
+      eslint-plugin-react-compiler: 19.0.0-beta-37ed2a7-20241206(eslint@9.15.0(jiti@1.21.6))
       eslint-plugin-react-hooks: 5.0.0(eslint@9.15.0(jiti@1.21.6))
       eslint-plugin-react-refresh: 0.4.14(eslint@9.15.0(jiti@1.21.6))
       eslint-plugin-solid: 0.14.4(eslint@9.15.0(jiti@1.21.6))(typescript@5.7.2)
@@ -4882,11 +4878,11 @@ snapshots:
       '@types/eslint': 8.56.10
       eslint-config-prettier: 9.1.0(eslint@9.15.0(jiti@1.21.6))
 
-  eslint-plugin-react-compiler@19.0.0-beta-df7b47d-20241124(eslint@9.15.0(jiti@1.21.6)):
+  eslint-plugin-react-compiler@19.0.0-beta-37ed2a7-20241206(eslint@9.15.0(jiti@1.21.6)):
     dependencies:
       '@babel/core': 7.26.0
       '@babel/parser': 7.26.3
-      '@babel/plugin-transform-private-methods': 7.25.9(@babel/core@7.26.0)
+      '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.26.0)
       eslint: 9.15.0(jiti@1.21.6)
       hermes-parser: 0.25.1
       zod: 3.23.8
@@ -6209,8 +6205,6 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.7: {}
-
   nanoid@3.3.8: {}
 
   natural-compare-lite@1.4.0: {}
@@ -6507,7 +6501,7 @@ snapshots:
 
   postcss@8.4.49:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
