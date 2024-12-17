@@ -59,7 +59,7 @@ const config: Config = {
       },
     },
   },
-  darkMode: ["class"],
+  darkMode: "selector",
   plugins: [tailwindCSSAnimate],
 };
 export default config;

@@ -1,3 +1,4 @@
+import { ThemeSwitch } from "~/components/ThemeSwitch";
 import { m } from "~/lib/motion";
 import Counter from "./Counter";
 
@@ -9,6 +10,8 @@ export default function Home() {
         className="size-16 rounded-md border bg-blue-600"
       />
       <Counter />
+
+      <ThemeSwitch />
     </main>
   );
 }
