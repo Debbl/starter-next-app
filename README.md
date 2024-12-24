@@ -1,6 +1,6 @@
 # starter-next-app
 
-Prioritizing SSG Rendering
+[Static Exports](https://nextjs.org/docs/app/building-your-application/deploying/static-exports) first
 
 ## ui
 
