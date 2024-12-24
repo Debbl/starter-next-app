@@ -10,7 +10,7 @@ export interface ProvidersProps {
 }
 
 export function Providers({ lang, children }: ProvidersProps) {
-  const i18n = getI18nInstance(lang);
+  const { i18n, messages, locales } = getI18nInstance(lang);
   setI18n(i18n);
 
   return (
@@ -20,10 +20,7 @@ export function Providers({ lang, children }: ProvidersProps) {
       enableSystem
       disableTransitionOnChange
     >
-      <LinguiClientProvider
-        initialLocale={lang}
-        initialMessages={i18n.messages}
-      >
+      <LinguiClientProvider locale={lang} messages={messages} locales={locales}>
         <LazyMotion features={domMax}>{children}</LazyMotion>
       </LinguiClientProvider>
     </ThemeProvider>

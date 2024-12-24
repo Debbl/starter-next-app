@@ -6,20 +6,22 @@ import type { Messages } from "@lingui/core";
 
 export function LinguiClientProvider({
   children,
-  initialLocale,
-  initialMessages,
+  locale,
+  locales,
+  messages,
 }: {
   children: React.ReactNode;
-  initialLocale: string;
-  initialMessages: Messages;
+  locale: string;
+  locales: string[];
+  messages: { [k: string]: Messages };
 }) {
-  const [i18n] = useState(() => {
-    return setupI18n({
-      locale: initialLocale,
-      locales: ["en", "zh"],
-      messages: { [initialLocale]: initialMessages },
-    });
-  });
+  const [i18n] = useState(() =>
+    setupI18n({
+      locale,
+      locales,
+      messages,
+    }),
+  );
 
   return <I18nProvider i18n={i18n}>{children}</I18nProvider>;
 }

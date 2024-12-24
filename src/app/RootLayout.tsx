@@ -1,5 +1,3 @@
-import { setI18n } from "@lingui/react/server";
-import { getI18nInstance } from "~/i18n";
 import { Providers } from "../providers";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -13,9 +11,6 @@ export const metadata: Metadata = {
 
 export function getRootLayout(lang: string) {
   function RootLayout({ children }: { children: ReactNode }) {
-    const i18n = getI18nInstance(lang);
-    setI18n(i18n);
-
     return (
       <html lang={lang} suppressHydrationWarning>
         <body>

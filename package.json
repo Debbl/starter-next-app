@@ -13,10 +13,10 @@
     "url": "https://github.com/Debbl/starter-next-app.git"
   },
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "extract": "lingui extract",
     "compile": "lingui compile",
-    "build": "next build",
+    "build": "pnpm compile && next build",
     "build:analyze": "ANALYZE=true next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
