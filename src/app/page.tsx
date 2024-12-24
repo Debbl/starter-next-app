@@ -1,4 +1,4 @@
-import { ThemeSwitch } from "~/components/ThemeSwitch";
+import { ThemeSwitcher } from "~/components/ThemeSwitcher";
 import { m } from "~/lib/motion";
 import Counter from "./Counter";
 
@@ -11,7 +11,7 @@ export default function Home() {
       />
       <Counter />
 
-      <ThemeSwitch />
+      <ThemeSwitcher />
     </main>
   );
 }

@@ -2,7 +2,7 @@
 import { useHydrated } from "@debbl/ahooks";
 import { useTheme } from "next-themes";
 
-export function ThemeSwitch() {
+export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
 
   const { isHydrated } = useHydrated();
