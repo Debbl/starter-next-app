@@ -1,15 +1,13 @@
 import { setupI18n } from "@lingui/core";
 import linguiConfig from "../lingui.config";
 import "server-only";
-import type { I18n, Messages } from "@lingui/core";
+import type { AllMessages, I18n } from "@lingui/core";
 
 export const { locales, sourceLocale = "en" } = linguiConfig;
 
 type SupportedLocales = string;
 
-async function loadCatalog(locale: SupportedLocales): Promise<{
-  [k: string]: Messages;
-}> {
+async function loadCatalog(locale: SupportedLocales): Promise<AllMessages> {
   const { messages } = await import(`./locales/${locale}/messages.po`);
   return {
     [locale]: messages,
@@ -41,9 +39,5 @@ export const getI18nInstance = (locale: SupportedLocales) => {
     console.warn(`No i18n instance found for locale "${locale}"`);
   }
 
-  return {
-    i18n: allI18nInstances[locale]! || allI18nInstances.en!,
-    locales,
-    messages: allMessages,
-  };
+  return allI18nInstances[locale]! || allI18nInstances.en!;
 };
