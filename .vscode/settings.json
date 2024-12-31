@@ -12,5 +12,12 @@
       "severity": "warn"
     }
   ],
-  "cSpell.words": ["lingui", "nextui", "shadcn", "turbopack"]
+  "cSpell.words": [
+    "lingui",
+    "nextui",
+    "precache",
+    "serwist",
+    "shadcn",
+    "turbopack"
+  ]
 }

@@ -17,6 +17,10 @@
 
 - [lingui](https://github.com/lingui/js-lingui)
 
+## PWA
+
+- [serwist](https://github.com/serwist/serwist)
+
 ## lint
 
 - [eslint](https://github.com/eslint/eslint)
