@@ -38,3 +38,7 @@ next-env.d.ts
 # locales
 .lingui
 src/locales/**/*.js
+
+# Serwist
+public/sw*
+public/swe-worker*
