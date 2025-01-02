@@ -1,7 +1,7 @@
 import { setI18n } from "@lingui/react/server";
-import { domMax, LazyMotion } from "motion/react";
 import { ThemeProvider } from "next-themes";
 import { getI18nInstance } from "~/i18n";
+import { domMax, LazyMotion } from "~/lib/motion";
 import { LinguiClientProvider } from "./LinguiClientProvider";
 
 export interface ProvidersProps {
@@ -25,7 +25,9 @@ export function Providers({ lang, children }: ProvidersProps) {
         locales={i18n.locales}
         messages={i18n.messages}
       >
-        <LazyMotion features={domMax}>{children}</LazyMotion>
+        <LazyMotion strict features={domMax}>
+          {children}
+        </LazyMotion>
       </LinguiClientProvider>
     </ThemeProvider>
   );
