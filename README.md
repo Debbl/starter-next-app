@@ -17,6 +17,10 @@
 
 - [lingui](https://github.com/lingui/js-lingui)
 
+```sh
+degit debbl/starter-next-app#with-i18n
+```
+
 ## PWA
 
 - [serwist](https://github.com/serwist/serwist)

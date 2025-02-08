@@ -36,7 +36,6 @@ yarn-error.log*
 next-env.d.ts
 
 # locales
-.lingui
 src/locales/**/*.js
 
 # Serwist

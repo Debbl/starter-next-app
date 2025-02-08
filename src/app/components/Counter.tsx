@@ -1,5 +1,4 @@
 "use client";
-import { Trans } from "@lingui/react/macro";
 import { PartyPopper } from "lucide-react";
 import { useState } from "react";
 import { Button } from "~/components/ui/Button";
@@ -10,7 +9,7 @@ export default function Counter() {
   return (
     <Button type="button" variant="outline" onClick={() => setCount(count + 1)}>
       <PartyPopper />
-      <Trans>Hi</Trans> {count}
+      Hi {count}
     </Button>
   );
 }

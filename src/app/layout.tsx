@@ -1,7 +1,6 @@
-import { Providers } from "../providers";
+import { Providers } from "~/providers";
 import "./globals.css";
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,15 +32,12 @@ export const metadata: Metadata = {
   ],
 };
 
-export function getRootLayout(lang: string) {
-  function RootLayout({ children }: { children: ReactNode }) {
-    return (
-      <html lang={lang} suppressHydrationWarning>
-        <body>
-          <Providers lang={lang}>{children}</Providers>
-        </body>
-      </html>
-    );
-  }
-  return RootLayout;
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
 }
