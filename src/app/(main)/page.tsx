@@ -1,6 +1,7 @@
+import { LangSwitcher } from "~/components/LangSwitcher";
 import { ThemeSwitcher } from "~/components/ThemeSwitcher";
 import { m } from "~/lib/motion";
-import Counter from "./components/Counter";
+import Counter from "./Counter";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Counter />
 
       <ThemeSwitcher />
+      <LangSwitcher />
     </main>
   );
 }
