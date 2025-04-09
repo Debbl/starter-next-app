@@ -1,5 +1,6 @@
 import bundleAnalyzer from "@next/bundle-analyzer";
 import withSerwistInit from "@serwist/next";
+import AutoImport from "unplugin-auto-import/webpack";
 import type { NextConfig } from "next";
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -16,6 +17,28 @@ const nextConfig: NextConfig = {
   output: "export",
   experimental: {
     reactCompiler: true,
+  },
+  webpack: (config) => {
+    config.plugins.push(
+      AutoImport({
+        include: [
+          /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        ],
+        imports: [
+          "react",
+          {
+            twl: ["cn"],
+          },
+          {
+            from: "motion/react-m",
+            imports: [["*", "motion"]],
+          },
+        ],
+        dts: true,
+      }),
+    );
+
+    return config;
   },
 };
 

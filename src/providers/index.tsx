@@ -1,5 +1,5 @@
+import { domMax, LazyMotion } from "motion/react";
 import { ThemeProvider } from "next-themes";
-import { domMax, LazyMotion } from "~/lib/motion";
 
 export interface ProvidersProps {
   children: React.ReactNode;
