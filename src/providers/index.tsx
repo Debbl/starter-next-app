@@ -2,7 +2,7 @@ import { setI18n } from "@lingui/react/server";
 import { ThemeProvider } from "next-themes";
 import { getI18nInstance } from "~/i18n";
 import { domMax, LazyMotion } from "~/lib/motion";
-import { LinguiClientProvider } from "./LinguiClientProvider";
+import ProvidersClient from "./index.client";
 
 export interface ProvidersProps {
   lang: string;
@@ -20,15 +20,11 @@ export function Providers({ lang, children }: ProvidersProps) {
       enableSystem
       disableTransitionOnChange
     >
-      <LinguiClientProvider
-        locale={lang}
-        locales={i18n.locales}
-        messages={i18n.messages}
-      >
+      <ProvidersClient lang={lang}>
         <LazyMotion strict features={domMax}>
           {children}
         </LazyMotion>
-      </LinguiClientProvider>
+      </ProvidersClient>
     </ThemeProvider>
   );
 }
