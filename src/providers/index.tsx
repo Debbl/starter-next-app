@@ -1,7 +1,7 @@
 import { setI18n } from "@lingui/react/server";
+import { domMax, LazyMotion } from "motion/react";
 import { ThemeProvider } from "next-themes";
 import { getI18nInstance } from "~/i18n";
-import { domMax, LazyMotion } from "~/lib/motion";
 import ProvidersClient from "./index.client";
 
 export interface ProvidersProps {
