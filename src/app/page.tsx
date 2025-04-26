@@ -1,5 +1,5 @@
-import { ThemeSwitcher } from "~/components/ThemeSwitcher";
-import Counter from "./components/Counter";
+import { ThemeSwitcher } from "~/components/theme-switcher";
+import Counter from "./components/counter";
 
 export default function Home() {
   return (
