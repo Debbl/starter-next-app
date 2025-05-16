@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "@debbl/eslint-config";
+import { defineConfig } from '@debbl/eslint-config'
 
 export default defineConfig({
   typescript: true,
@@ -7,5 +7,5 @@ export default defineConfig({
     next: true,
     compiler: true,
   },
-  tailwindcss: "prettier",
-});
+  tailwindcss: 'prettier',
+})
