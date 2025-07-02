@@ -1,7 +1,8 @@
 'use client'
+import { LangSwitcher } from '~/components/lang-switcher'
 import { ThemeSwitcher } from '~/components/theme-switcher'
 import { orpc } from '~/lib/orpc'
-import Counter from './components/counter'
+import { Counter } from './counter'
 
 export default function Home() {
   useEffect(() => {
@@ -20,6 +21,7 @@ export default function Home() {
       <Counter />
 
       <ThemeSwitcher />
+      <LangSwitcher />
     </main>
   )
 }

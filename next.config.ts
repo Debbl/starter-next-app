@@ -16,8 +16,24 @@ const withSerwist = withSerwistInit({
 const nextConfig: NextConfig = {
   experimental: {
     reactCompiler: true,
+    swcPlugins: [['@lingui/swc-plugin', {}]],
+    // turbo: {
+    //   rules: {
+    //     "*.po": {
+    //       loaders: ["@lingui/loader"],
+    //       as: "*.js",
+    //     },
+    //   },
+    // },
   },
   webpack: (config) => {
+    config.module.rules.push({
+      test: /\.po$/,
+      use: {
+        loader: '@lingui/loader',
+      },
+    })
+
     config.plugins.push(
       AutoImport({
         include: [
