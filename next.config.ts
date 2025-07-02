@@ -14,7 +14,6 @@ const withSerwist = withSerwistInit({
 })
 
 const nextConfig: NextConfig = {
-  output: 'export',
   experimental: {
     reactCompiler: true,
   },
