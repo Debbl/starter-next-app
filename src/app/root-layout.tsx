@@ -1,5 +1,5 @@
 import { Providers } from '../providers'
-import './globals.css'
+import './styles/index.css'
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 
