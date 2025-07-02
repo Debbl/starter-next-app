@@ -1,12 +1,12 @@
-import { defineConfig } from "@lingui/cli";
+import { defineConfig } from '@lingui/cli'
 
 export default defineConfig({
-  sourceLocale: "en",
-  locales: ["en", "zh"],
+  sourceLocale: 'en',
+  locales: ['en', 'zh'],
   catalogs: [
     {
-      path: "<rootDir>/src/locales/{locale}/messages",
-      include: ["src"],
+      path: '<rootDir>/src/locales/{locale}/messages',
+      include: ['src'],
     },
   ],
-});
+})
