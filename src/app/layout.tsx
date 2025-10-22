@@ -1,3 +1,4 @@
+import { Geist, Geist_Mono } from 'next/font/google'
 import { Providers } from '~/providers'
 import './styles/index.css'
 import type { Metadata } from 'next'
@@ -39,9 +40,23 @@ export const metadata: Metadata = {
   },
 }
 
+const geistSans = Geist({
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
+
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html
+      lang='en'
+      className={cn(geistSans.variable, geistMono.variable)}
+      suppressHydrationWarning
+    >
       <body>
         <Providers>{children}</Providers>
       </body>
