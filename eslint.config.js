@@ -7,5 +7,9 @@ export default defineConfig({
     next: true,
     compiler: true,
   },
-  tailwindcss: 'prettier',
+  tailwindcss: {
+    settings: {
+      entryPoint: 'src/app/styles/index.css',
+    },
+  },
 })
