@@ -1,6 +1,5 @@
 import bundleAnalyzer from '@next/bundle-analyzer'
-import withSerwistInit from '@serwist/next'
-import AutoImport from 'unplugin-auto-import/webpack'
+import { createAutoImport } from 'next-auto-import'
 import type { NextConfig } from 'next'
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -8,39 +7,22 @@ const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 })
 
-const withSerwist = withSerwistInit({
-  swSrc: 'src/app/sw.ts',
-  swDest: 'public/sw.js',
+const withAutoImport = createAutoImport({
+  imports: [
+    'react',
+    {
+      twl: ['cn'],
+    },
+  ],
 })
 
 const nextConfig: NextConfig = {
   output: 'export',
   reactCompiler: true,
-  webpack: (config) => {
-    config.plugins.push(
-      AutoImport({
-        include: [
-          /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-        ],
-        imports: [
-          'react',
-          {
-            twl: ['cn'],
-          },
-          {
-            from: 'motion/react-m',
-            imports: [['*', 'motion']],
-          },
-        ],
-        dts: true,
-      }),
-    )
-
-    return config
-  },
+  serverExternalPackages: ['esbuild-wasm'],
 }
 
-export default [withBundleAnalyzer, withSerwist].reduce(
+export default [withBundleAnalyzer, withAutoImport].reduce(
   (config, withFn) => withFn(config),
   nextConfig,
 )
