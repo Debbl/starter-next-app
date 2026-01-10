@@ -8,7 +8,7 @@ export interface ProvidersProps {
 
 export function Providers({ children }: ProvidersProps) {
   return (
-    <SerwistProvider swUrl='/sw.js'>
+    <SerwistProvider swUrl='/serwist/sw.js'>
       <ThemeProvider
         attribute='class'
         defaultTheme='system'
