@@ -13,6 +13,10 @@ const withAutoImport = createAutoImport({
     {
       twl: ['cn'],
     },
+    {
+      from: 'motion/react-m',
+      imports: [['*', 'motion']],
+    },
   ],
 })
 

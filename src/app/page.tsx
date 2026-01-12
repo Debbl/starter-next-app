@@ -1,4 +1,3 @@
-import * as motion from 'motion/react-m'
 import { ThemeSwitcher } from '~/components/theme-switcher'
 import Counter from './components/counter'
 
