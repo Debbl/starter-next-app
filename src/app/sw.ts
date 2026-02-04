@@ -1,7 +1,6 @@
-/// <reference no-default-lib="true" />
 /// <reference lib="esnext" />
 /// <reference lib="webworker" />
-import { defaultCache } from '@serwist/turbopack/worker'
+import { defaultCache } from '@serwist/next/worker'
 import { Serwist } from 'serwist'
 import type { PrecacheEntry, SerwistGlobalConfig } from 'serwist'
 
@@ -15,24 +14,11 @@ declare global {
   }
 }
 
-declare const self: ServiceWorkerGlobalScope
-
 const serwist = new Serwist({
-  precacheEntries: self.__SW_MANIFEST,
   skipWaiting: true,
   clientsClaim: true,
   navigationPreload: true,
   runtimeCaching: defaultCache,
-  fallbacks: {
-    entries: [
-      {
-        url: '/~offline',
-        matcher({ request }) {
-          return request.destination === 'document'
-        },
-      },
-    ],
-  },
 })
 
 serwist.addEventListeners()
