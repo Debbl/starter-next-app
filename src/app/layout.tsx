@@ -50,6 +50,9 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
+// eslint-disable-next-line n/prefer-global/process
+const isDev = process.env.NODE_ENV === 'development'
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html
@@ -57,6 +60,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       className={cn(geistSans.variable, geistMono.variable)}
       suppressHydrationWarning
     >
+      <head>
+        {isDev && (
+          <script
+            src='https://unpkg.com/react-scan/dist/auto.global.js'
+            defer
+          />
+        )}
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
