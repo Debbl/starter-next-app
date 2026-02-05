@@ -23,7 +23,6 @@ const withAutoImport = createAutoImport({
 const nextConfig: NextConfig = {
   output: 'export',
   reactCompiler: true,
-  serverExternalPackages: ['esbuild-wasm'],
 }
 
 export default [withBundleAnalyzer, withAutoImport].reduce(
