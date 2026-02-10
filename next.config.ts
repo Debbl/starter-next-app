@@ -21,7 +21,6 @@ const withAutoImport = createAutoImport({
 })
 
 const nextConfig: NextConfig = {
-  output: 'export',
   reactCompiler: true,
 }
 

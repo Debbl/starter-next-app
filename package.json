@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.28.2",
+  "packageManager": "pnpm@10.29.2",
   "description": "starter next app",
-  "author": "Brendan Dash <me@aiwna.run> (https://github.com/Debbl/)",
+  "author": "Brendan Dash <me@aiwan.run> (https://github.com/Debbl/)",
   "license": "MIT",
   "homepage": "https://github.com/Debbl/starter-next-app",
   "repository": {
@@ -36,28 +36,28 @@
     "twl": "^0.0.0"
   },
   "devDependencies": {
-    "@debbl/eslint-config": "^3.15.1",
+    "@debbl/eslint-config": "^3.15.2",
     "@next/bundle-analyzer": "^16.1.6",
-    "@serwist/cli": "^9.5.4",
-    "@serwist/next": "^9.5.4",
+    "@serwist/cli": "^9.5.5",
+    "@serwist/next": "^9.5.5",
     "@tailwindcss/postcss": "^4.1.18",
-    "@types/node": "^25.2.1",
+    "@types/node": "^25.2.2",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "^1.0.0",
-    "eslint": "^9.39.2",
+    "eslint": "9.39.2",
     "lint-staged": "^16.2.7",
     "next-auto-import": "^0.0.4",
     "postcss": "^8.5.6",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "serwist": "^9.5.4",
+    "serwist": "^9.5.5",
     "simple-git-hooks": "^2.13.1",
     "swc-plugin-auto-import": "0.0.7",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "pnpm typecheck && pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
