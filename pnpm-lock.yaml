@@ -50,10 +50,10 @@ importers:
         version: 16.2.2
       '@serwist/cli':
         specifier: ^9.5.5
-        version: 9.5.7(@types/node@25.5.0)(browserslist@4.28.2)(esbuild@0.27.3)(typescript@5.9.3)
+        version: 9.5.7(@types/node@25.5.0)(browserslist@4.28.1)(esbuild@0.27.3)(typescript@5.9.3)
       '@serwist/next':
         specifier: ^9.5.5
-        version: 9.5.7(@serwist/cli@9.5.7(@types/node@25.5.0)(browserslist@4.28.2)(esbuild@0.27.3)(typescript@5.9.3))(next@16.2.3(@babel/core@7.29.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)(typescript@5.9.3)
+        version: 9.5.7(@serwist/cli@9.5.7(@types/node@25.5.0)(browserslist@4.28.1)(esbuild@0.27.3)(typescript@5.9.3))(next@16.2.3(@babel/core@7.29.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)(typescript@5.9.3)
       '@tailwindcss/postcss':
         specifier: ^4.1.18
         version: 4.2.2
@@ -86,7 +86,7 @@ importers:
         version: 0.7.2(prettier@3.8.1)
       serwist:
         specifier: ^9.5.5
-        version: 9.5.7(browserslist@4.28.2)(typescript@5.9.3)
+        version: 9.5.7(browserslist@4.28.1)(typescript@5.9.3)
       simple-git-hooks:
         specifier: ^2.13.1
         version: 2.13.1
@@ -5771,24 +5771,11 @@ snapshots:
     transitivePeerDependencies:
       - browserslist
 
-  '@serwist/build@9.5.7(browserslist@4.28.2)(typescript@5.9.3)':
-    dependencies:
-      '@serwist/utils': 9.5.7(browserslist@4.28.2)
-      common-tags: 1.8.2
-      glob: 10.5.0
-      pretty-bytes: 6.1.1
-      source-map: 0.8.0-beta.0
-      zod: 4.3.6
-    optionalDependencies:
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - browserslist
-
-  '@serwist/cli@9.5.7(@types/node@25.5.0)(browserslist@4.28.2)(esbuild@0.27.3)(typescript@5.9.3)':
+  '@serwist/cli@9.5.7(@types/node@25.5.0)(browserslist@4.28.1)(esbuild@0.27.3)(typescript@5.9.3)':
     dependencies:
       '@inquirer/prompts': 8.3.0(@types/node@25.5.0)
-      '@serwist/build': 9.5.7(browserslist@4.28.2)(typescript@5.9.3)
-      '@serwist/utils': 9.5.7(browserslist@4.28.2)
+      '@serwist/build': 9.5.7(browserslist@4.28.1)(typescript@5.9.3)
+      '@serwist/utils': 9.5.7(browserslist@4.28.1)
       chalk: 5.6.2
       chokidar: 5.0.0
       common-tags: 1.8.2
@@ -5805,7 +5792,7 @@ snapshots:
       - browserslist
       - typescript
 
-  '@serwist/next@9.5.7(@serwist/cli@9.5.7(@types/node@25.5.0)(browserslist@4.28.2)(esbuild@0.27.3)(typescript@5.9.3))(next@16.2.3(@babel/core@7.29.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)(typescript@5.9.3)':
+  '@serwist/next@9.5.7(@serwist/cli@9.5.7(@types/node@25.5.0)(browserslist@4.28.1)(esbuild@0.27.3)(typescript@5.9.3))(next@16.2.3(@babel/core@7.29.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)(typescript@5.9.3)':
     dependencies:
       '@serwist/build': 9.5.7(browserslist@4.28.1)(typescript@5.9.3)
       '@serwist/utils': 9.5.7(browserslist@4.28.1)
@@ -5820,7 +5807,7 @@ snapshots:
       serwist: 9.5.7(browserslist@4.28.1)(typescript@5.9.3)
       zod: 4.3.6
     optionalDependencies:
-      '@serwist/cli': 9.5.7(@types/node@25.5.0)(browserslist@4.28.2)(esbuild@0.27.3)(typescript@5.9.3)
+      '@serwist/cli': 9.5.7(@types/node@25.5.0)(browserslist@4.28.1)(esbuild@0.27.3)(typescript@5.9.3)
       typescript: 5.9.3
     transitivePeerDependencies:
       - webpack
@@ -5828,10 +5815,6 @@ snapshots:
   '@serwist/utils@9.5.7(browserslist@4.28.1)':
     optionalDependencies:
       browserslist: 4.28.1
-
-  '@serwist/utils@9.5.7(browserslist@4.28.2)':
-    optionalDependencies:
-      browserslist: 4.28.2
 
   '@serwist/webpack-plugin@9.5.7(browserslist@4.28.1)(typescript@5.9.3)':
     dependencies:
@@ -7986,15 +7969,6 @@ snapshots:
   serwist@9.5.7(browserslist@4.28.1)(typescript@5.9.3):
     dependencies:
       '@serwist/utils': 9.5.7(browserslist@4.28.1)
-      idb: 8.0.3
-    optionalDependencies:
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - browserslist
-
-  serwist@9.5.7(browserslist@4.28.2)(typescript@5.9.3):
-    dependencies:
-      '@serwist/utils': 9.5.7(browserslist@4.28.2)
       idb: 8.0.3
     optionalDependencies:
       typescript: 5.9.3
